@@ -1,4 +1,5 @@
 import FloatingNav from "@/components/FloatingNav";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
 
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="max-w-[1440px] mx-auto">
       <FloatingNav/>
       <HeroSection/>
+      <Footer/>
     </div>
   );
 }
