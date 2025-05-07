@@ -81,7 +81,7 @@ const FloatingNav = () => {
                 <li>
                   <a
                     href="#"
-                    className="block p-2 hover:text-blue-400 transition-colors duration-200"
+                    className="block p-2"
                     onClick={() => setIsOpen(false)}
                   >
                     Work
@@ -90,7 +90,7 @@ const FloatingNav = () => {
                 <li>
                   <a
                     href="#"
-                    className="block p-2 hover:text-blue-400 transition-colors duration-200"
+                    className="block p-2"
                     onClick={() => setIsOpen(false)}
                   >
                     About
@@ -99,7 +99,7 @@ const FloatingNav = () => {
                 <li>
                   <a
                     href="#"
-                    className="block p-2 hover:text-blue-400 transition-colors duration-200"
+                    className="block p-2"
                     onClick={() => setIsOpen(false)}
                   >
                     Blog
@@ -108,7 +108,7 @@ const FloatingNav = () => {
                 <li>
                   <a
                     href="#"
-                    className="block p-2 hover:text-blue-400 transition-colors duration-200"
+                    className="block p-2"
                     onClick={() => setIsOpen(false)}
                   >
                     Contact
