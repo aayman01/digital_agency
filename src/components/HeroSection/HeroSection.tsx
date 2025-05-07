@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import shawdowR from "../assets/shadowR.png"
-import shawdowL from "../assets/shadowL.png"
+import shawdowR from "../../assets/shadowR.png"
+import shawdowL from "../../assets/shadowL.png";
 import Spotlight from './Spotlight';
+import BrandLogo from './BrandLogo';
 
 const HeroSection = () => {
     return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className="relative z-30 py-36 lg:py-60">
+        <div className="relative z-30 pt-36 py-6 lg:pt-48 lg:py-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide">
             We Shape Your Ideas Into <br />
             <span>Awesome Digital</span>
@@ -52,6 +53,7 @@ const HeroSection = () => {
             Book a call with us
           </button>
         </div>
+        <BrandLogo/>
       </section>
     );
 };
