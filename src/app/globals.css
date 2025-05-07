@@ -2,6 +2,8 @@
 
 :root {
   --font-rethink-sans: 'Rethink Sans', sans-serif;
+  --background: #09090b;
+  --foreground: #fafafa;
 }
 body {
   background: var(--background);
