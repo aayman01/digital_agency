@@ -36,17 +36,19 @@ const BrandLogo = () => {
     ];
     
     return (
-      <div className='flex item-center justify-evenly'>
-        {logos.map((logo: Logo) => (
-          <Image 
-            key={logo.id}
-            width={140} 
-            height={50} 
-            src={logo.image} 
-            alt='Brand Logo'
-          />
-        ))}
-      </div>
+       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 items-center justify-items-center">
+          {logos.map((logo: Logo) => (
+            <div key={logo.id} className="w-full flex items-center justify-center p-4">
+              <Image
+                src={logo.image}
+                alt={`Brand Logo ${logo.id}`}
+                width={100}
+                height={40}
+                className="w-auto h-auto max-h-12 object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          ))}
+        </div>  
     );
 };
 
