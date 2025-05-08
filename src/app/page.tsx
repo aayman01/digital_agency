@@ -4,7 +4,7 @@ import FloatingNav from "@/components/FloatingNav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ViewMoreButton from "@/shared/ViewMoreButton";
-
+import RecentWorks from "@/components/RecentWorks";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <FloatingNav/>
       <HeroSection/>
       <FeaturedWork/>
+      <RecentWorks/>
       <ViewMoreButton/>
       <FeaturedInsights/>
       <ViewMoreButton/>

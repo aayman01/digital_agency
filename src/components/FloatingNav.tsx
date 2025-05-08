@@ -76,7 +76,7 @@ const FloatingNav = () => {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-md border border-gray-700 rounded-lg md:hidden">
+            <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-black backdrop-blur-md border border-gray-700 rounded-lg md:hidden">
               <ul className="flex flex-col gap-4 text-white font-medium">
                 <li>
                   <a
