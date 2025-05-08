@@ -46,10 +46,10 @@ const HeroSection = () => {
             <br />
             <span>Experience</span>
           </h1>
-          <p className="text-gray-400 max-w-xl mx-auto mb-6">
+          <p className="text-gray-400 max-w-xl mx-auto mb-7 text-xl">
             Let`s create a website, app, or product that makes an impact.
           </p>
-          <button className="bg-gradient-to-r from-[#73BFFA] to-[#3C97F5] text-white py-3 px-6 rounded-full font-semibold transition-all hover:scale-105">
+          <button className="bg-gradient-to-r from-[#73BFFA] to-[#3C97F5] text-white py-5 text-xl px-6 rounded-full font-semibold transition-all hover:scale-105">
             Book a call with us
           </button>
         </div>

@@ -38,7 +38,7 @@ const FeaturedInsights = () => {
     },
   ];
   return (
-    <section className="px-8 lg:px-10">
+    <section className="px-4 lg:px-10">
       {features.map((feature: Data) => (
         <Link href={feature.link} key={feature.id}>
           <div className="flex items-center justify-between p-6 bg-gradient-to-r from-[#73BFFA33] via-transparent to-[#0A0A0A00] mb-5 rounded-xl">

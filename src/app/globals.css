@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+.bg-gradient{
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.00) 36.63%, #0A0A0A 94.39%);
+}
 
 :root {
   --font-rethink-sans: 'Rethink Sans', sans-serif;
