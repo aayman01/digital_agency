@@ -1,11 +1,35 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiAlignJustify } from "react-icons/fi";
 
 const FloatingNav = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.scrollY;
+
+            if (currentScrollPos < 300) {
+                setVisible(true);
+                setPrevScrollPos(currentScrollPos);
+                return;
+            }
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos]);
+
     return (
-      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[95%] lg:w-[1024px] lg:px-4 mx-auto z-50">
+      <header 
+        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[95%] lg:w-[1024px] lg:px-4 mx-auto z-50 transition-all duration-300 ${
+          visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+        }`}
+      >
         <nav className="flex items-center justify-between px-4 sm:px-6 py-3 rounded-full bg-[rgba(10, 10, 10, 0.10)] backdrop-blur-md border border-gray-700 shadow-lg">
           {/* Logo */}
           <svg
