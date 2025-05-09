@@ -1,14 +1,11 @@
 import React from "react";
 
-interface HeroBannerProps {
+interface Props {
   title: string;
   description: string;
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({
-  title,
-  description,
-}) => {
+const SemiCircleBg: React.FC<Props> = ({ title, description }) => {
   return (
     <section
       className={`flex items-center justify-center h-64 overflow-hidden bg-no-repeat bg-center bg-[url('../assets/Bg.png')] my-20`}
@@ -23,4 +20,4 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
   );
 };
 
-export default HeroBanner;
+export default SemiCircleBg;

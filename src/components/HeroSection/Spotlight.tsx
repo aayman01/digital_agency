@@ -7,7 +7,7 @@ interface SpotlightProps {
 
 export default function Spotlight({
   className,
-  fill = "#3C97F5",
+  fill ,
   opacity = 0.3,
 }: SpotlightProps) {
   return (

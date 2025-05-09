@@ -17,6 +17,11 @@ const HeroSection = () => {
           <Spotlight className="w-full h-full" fill="#93D1FD" opacity={0.5} />
         </div>
 
+        {/* Semi-circle base */}
+        {/* <div
+          className="absolute border-2 bottom-[-1] left-1/2 transform -translate-x-1/2 w-[1200px] h-[500px] rounded-t-full z-20 shadow-inner"
+        /> */}
+
         {/* Left Shadow */}
         <div className="absolute left-0 top-0 z-10">
           <Image
