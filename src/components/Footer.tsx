@@ -12,7 +12,7 @@ const Footer = () => {
               Have a project in mind?
             </p>
             <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-blue-400">
-              Let's Talk
+              {"Let's Talk"}
             </h2>
           </div>
 
