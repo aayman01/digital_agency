@@ -6,19 +6,28 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import ViewMoreButton from "@/shared/ViewMoreButton";
 import RecentWorks from "@/components/RecentWorks";
 import AllServices from "@/components/services/AllServices";
+import HeroBanner from "@/shared/SemiCircleBg";
 
 export default function Home() {
   return (
     <div className="max-w-[1440px] mx-auto">
-      <FloatingNav/>
-      <HeroSection/>
+      <FloatingNav />
+      <HeroSection />
       <FeaturedWork />
-      <AllServices/>
-      <RecentWorks/>
-      <ViewMoreButton/>
-      <FeaturedInsights/>
-      <ViewMoreButton/>
-      <Footer/>
+      <AllServices />
+      <HeroBanner
+        title="Our Most Recent Works"
+        description="Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem."
+      />
+      <RecentWorks />
+      <ViewMoreButton />
+      <HeroBanner
+        title="Featured Insights"
+        description="Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem."
+      />
+      <FeaturedInsights />
+      <ViewMoreButton />
+      <Footer />
     </div>
   );
 }

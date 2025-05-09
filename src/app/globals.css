@@ -3,6 +3,11 @@
 .bg-gradient{
   background: linear-gradient(180deg, rgba(10, 10, 10, 0.00) 36.63%, #0A0A0A 94.39%);
 }
+.gradient-text{
+  background: radial-gradient(319.11% 160.46% at 48.8% 59.03%, #FFF 56.47%, rgba(255, 255, 255, 0.50) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 :root {
   --font-rethink-sans: 'Rethink Sans', sans-serif;

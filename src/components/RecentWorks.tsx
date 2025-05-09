@@ -48,10 +48,10 @@ const RecentWorks = () => {
       },
     ];
     return (
-      <section className="py-16 text-white px-4 lg:px-28">
+      <section className=" text-white px-4 lg:px-28">
 
         {/* First Row */}
-        <div className="flex flex-wrap justify-between gap-6 mb-8">
+        <div className="flex flex-wrap justify-between md:gap-2 lg:gap-5 mb-8">
           {recentWork.slice(0, 2).map((item, i) => (
             <div key={i} className="w-full md:w-[48%]">
               <Card {...item} image={item.image.src} />
@@ -60,7 +60,7 @@ const RecentWorks = () => {
         </div>
 
         {/* Second Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
           {recentWork.slice(2).map((item, i) => (
             <Card key={i + 2} {...item} image={item.image.src} />
           ))}

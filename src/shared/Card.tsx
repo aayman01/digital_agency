@@ -29,7 +29,7 @@ const Card = ({ image, title, subtitle, link }: Card) => {
           className="inline-flex lg:items-center mt-4 text-sm font-medium text-white"
         >
           <button className="bg-[#181E22] text-lg md:text-xl font-semibold px-4 md:px-5 py-3 md:py-4 rounded-full border border-gray-500">
-            Open <span className="ml-2 ">↗</span>
+            Open <span className="ml-">↗</span>
           </button>
         </a>
       </div>
