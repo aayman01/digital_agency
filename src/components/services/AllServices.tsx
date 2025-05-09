@@ -5,7 +5,7 @@ import Card4th from './Card4th';
 
 const AllServices = () => {
     return (
-      <section className="lg:px-28 px-4">
+      <section className="lg:px-28 px-4 mt-7 md:mt-12">
         <h1 className="max-w-[1140px] mx-auto text-left font-medium text-3xl lg:text-4xl lg:leading-14 text-[#6D6D6D] mb-4 lg:mb-0">
           We are a full-service studio creating transformative{" "}
           <span className="font-bold text-white">

@@ -10,14 +10,18 @@ interface Card {
 
 const Card = ({ image, title, subtitle, link }: Card) => {
   return (
-    <div className="bg-[#111] rounded-xl overflow-hidden shadow-md hover:scale-[1.02] transition-transform duration-300">
-      <Image
-        src={image}
-        alt={title}
-        width={440}
-        height={490}
-        className="w-full h-[400px] object-cover"
-      />
+    <div className="bg-[#0A0A0A] rounded-xl overflow-hidden shadow-md hover:scale-[1.02] transition-transform duration-300">
+      <div className="relative">
+        <Image
+          src={image}
+          alt={title}
+          width={440}
+          height={490}
+          className="w-full h-[400px] object-cover"
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80" />
+      </div>
       <div className="p-2 lg:p-4 flex lg:flex-row flex-col items-start lg:items-center lg:justify-between">
         <div>
           <h3 className="text-2xl font-semibold">{title}</h3>
